@@ -27,8 +27,8 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
     // baseURL: 'http://localhost:3000',
-    //baseURL: 'https://www.saucedemo.com',
-    baseURL: 'https://restful-booker.herokuapp.com',
+    baseURL: 'https://www.saucedemo.com',
+    //baseURL: 'https://restful-booker.herokuapp.com',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
@@ -38,7 +38,7 @@ export default defineConfig({
 
     //NavigationTimeout : Maximum allowed for the page.goto() to load the network
     navigationTimeout: 15000,
-    headless: false,
+    headless: true,
     //A viewport size is the visible area of a web page inside the browser window. 
     // In Playwright, it's defined by the browser width and height in pixels.
     /* Viewportsize */
