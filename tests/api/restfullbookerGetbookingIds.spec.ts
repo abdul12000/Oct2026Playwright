@@ -8,4 +8,6 @@ test('getBokingIds - list all Booking ids - 200 OK', async ({ request }) => {
 
     const body = await response.json();
     console.log(JSON.stringify(body, null, 2));
+
+    
 });

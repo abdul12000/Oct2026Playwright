@@ -19,12 +19,13 @@ test.describe('Sauce Demo login Tests with Hooks', () => {
 
     })
 
-    //    test('verify successful login with standard user', async ({page}) => {
-    //     const loginPage = new LoginPage(page);
-    //     const productsPage = new ProductsPage(page);
+       test('Add an item to basket', async ({page}) => {
+        const loginPage = new LoginPage(page);
+        const productsPage = new ProductsPage(page);
 
-    //     await loginPage.loginAsStandardUser(loginData.validUser.username, loginData.validUser.password);
-    //     await productsPage.verifyLoginSuccess();
+        await loginPage.loginAsStandardUser(loginData.validUser.username, loginData.validUser.password);
+        await productsPage.verifyLoginSuccess();
+        await productsPage.clickAddBackpackToBassket();
 
-    // })
+    })
 })
